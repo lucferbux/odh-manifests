@@ -100,7 +100,7 @@ spec:
           name: config
       - name: jupyterhub-ha-sidecar
         image: gcr.io/google_containers/leader-elector:0.5
-        args: ['--election=jupyterhub-ha-election', '--election-namespace=$(namespace)']
+        args: ['--election=jupyterhub-ha-election', '--election-namespace=$(namespace)', '--http=0.0.0.0:4040']
       initContainers:
       - command:
         - wait-for-database
