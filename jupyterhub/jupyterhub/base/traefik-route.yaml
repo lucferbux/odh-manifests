@@ -7,7 +7,7 @@ metadata:
 spec:
   host: ''
   port:
-    targetPort: api
+    targetPort: admin
   tls:
     insecureEdgeTerminationPolicy: Redirect
     termination: edge
