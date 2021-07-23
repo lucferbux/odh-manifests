@@ -91,7 +91,7 @@ spec:
             configMapKeyRef:
               name: jupyterhub-cfg
               key: notebook_destination
-        image: quay.io/odh-jupyterhub/jupyterhub-img:v0.3.1
+        image: quay.io/odh-jupyterhub/jupyterhub-img:v0.3.2-test
         imagePullPolicy: "Always"
         name: jupyterhub
         ports:
@@ -125,7 +125,7 @@ spec:
               key: POSTGRESQL_PASSWORD
         - name: JUPYTERHUB_DATABASE_HOST
           value: jupyterhub-db
-        image: quay.io/odh-jupyterhub/jupyterhub-img:v0.3.1
+        image: quay.io/odh-jupyterhub/jupyterhub-img:v0.3.2-test
         imagePullPolicy: "Always"
         name: wait-for-database
         resources:
