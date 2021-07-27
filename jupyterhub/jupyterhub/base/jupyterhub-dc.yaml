@@ -35,12 +35,16 @@ spec:
           curl -kL -XPUT -H "Content-Type: application/json" -H "Authorization: Bearer $TOKEN" https://openshift.default.svc.cluster.local/api/v1/namespaces/${OPENSHIFT_DEPLOYMENT_NAMESPACE}/replicationcontrollers/$1/scale -d @$2;
         };
 
+        function get_replicas() {
+          oc get rc ${OPENSHIFT_DEPLOYMENT_NAME} -o jsonpath='{.metadata.annotations.kubectl\.kubernetes\.io\/desired-replicas}'
+        }
+
         export TOKEN=$(cat /run/secrets/kubernetes.io/serviceaccount/token);
         export OLD_RC=$(get_latest);
 
         echo $(generate_payload ${OLD_RC} 0) > /tmp/old.yaml;
-        echo $(generate_payload ${OPENSHIFT_DEPLOYMENT_NAME} 3) > /tmp/new.yaml;
-        
+        echo $(generate_payload ${OPENSHIFT_DEPLOYMENT_NAME} $(get_replicas)) > /tmp/new.yaml;    
+  
         post_scale ${OLD_RC} /tmp/old.yaml;
         post_scale ${OPENSHIFT_DEPLOYMENT_NAME} /tmp/new.yaml;
 
