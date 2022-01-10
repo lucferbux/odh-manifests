@@ -140,4 +140,4 @@ images:
     newTag: 2.3.3-002
   - name: trino
     newName: quay.io/lferrnan/trino-memory
-    newTag: '0.0.2'
+    newTag: '0.0.3'
