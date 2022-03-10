@@ -62,4 +62,11 @@ rules:
       - integreatly.org
     resources:
       - rhmis
-
+  - verbs:
+      - get
+      - list
+      - watch
+    apiGroups:
+      - user.openshift.io
+    resources:
+      - groups
