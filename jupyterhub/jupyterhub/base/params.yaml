@@ -24,3 +24,5 @@ varReference:
   kind: Postgres
 - path: spec/secretRef/namespace
   kind: Postgres
+- path: data/groups-config
+  kind: ConfigMap 
