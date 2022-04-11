@@ -18,3 +18,7 @@ spec:
       expr: count(count_over_time(kube_pod_container_status_ready{namespace="rhods-notebooks",pod=~"jupyterhub-nb.*"}[1h]))
       labels:
         instance: jupyter-notebooks
+    - record: cluster:usage:consumption:rhods:cpu_requests_runtime
+      expr: sum(kube_pod_container_resource_requests{namespace='rhods-notebooks', resource='cpu'})
+    - record: cluster:usage:consumption:rhods:cpu_limits_runtime
+      expr: sum(kube_pod_container_resource_limits{namespace='rhods-notebooks', resource='cpu'})
