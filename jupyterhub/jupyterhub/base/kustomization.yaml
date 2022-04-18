@@ -16,6 +16,8 @@ resources:
 - jupyterhub-spark-operator-configmap.yaml
 - jupyterhub-groups-configmap.yaml
 - jupyterhub-notebook-image-puller-rb.yaml
+- jupyterhub-deployer-role.yaml
+- jupyterhub-deployer-rolebinding.yaml
 - traefik-credentials-secret.yaml
 - traefik-configmap.yaml
 - traefik-deployment.yaml
