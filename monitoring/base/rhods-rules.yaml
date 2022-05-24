@@ -15,7 +15,7 @@ spec:
     - record: cluster:usage:consumption:rhods:pod:up
       expr: count(kube_pod_container_status_ready{namespace="rhods-notebooks",pod=~"jupyterhub-nb.*"}==1)
     - record: cluster:usage:consumption:rhods:active_users
-      expr: count(count_over_time(kube_pod_container_status_ready{namespace="rhods-notebooks",pod=~"jupyterhub-nb.*"}[1h]))
+      expr: count(count(count_over_time(kube_pod_container_status_ready{namespace="rhods-notebooks",pod=~"jupyterhub-nb.*"}[1h])) without (uid))
       labels:
         instance: jupyter-notebooks
     - record: cluster:usage:consumption:rhods:cpu_requests_runtime
