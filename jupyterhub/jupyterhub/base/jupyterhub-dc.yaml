@@ -212,7 +212,8 @@ spec:
             - /bin/sh
             - -c
             - /opt/app-root/src/probe.sh
-          initialDelaySeconds: 40
+          initialDelaySeconds: 5
+          failureThreshold: 3
           periodSeconds: 10
         env:
           - name: NAMESPACE
