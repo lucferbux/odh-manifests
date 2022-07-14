@@ -71,3 +71,21 @@ rules:
       - user.openshift.io
     resources:
       - groups
+  - verbs:
+      - get
+      - list
+      - watch
+    apiGroups:
+      - ''
+    resources:
+      - pods
+      - serviceaccounts
+      - secrets
+      - services
+      - namespaces
+  - verbs:
+      - list
+    apiGroups:
+      - rbac.authorization.k8s.io
+    resources:
+      - clusterrolebindings
