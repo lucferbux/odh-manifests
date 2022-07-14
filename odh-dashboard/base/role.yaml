@@ -31,6 +31,7 @@ rules:
       - watch
     resources:
       - configmaps
+      - persistentvolumeclaims
       - secrets
   - apiGroups:
       - batch
@@ -101,3 +102,15 @@ rules:
       - delete
     resources:
       - odhdashboardconfigs
+  - apiGroups:
+      - kubeflow.org
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+    resources:
+      - notebooks
