@@ -20,11 +20,53 @@ rules:
       - list
       - watch
   - apiGroups:
+      - ''
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+    resources:
+      - configmaps
+      - persistentvolumeclaims
+      - secrets
+  - apiGroups:
+      - batch
+    verbs:
+      - create
+      - delete
+      - get
+      - list
+      - patch
+      - update
+      - watch
+    resources:
+      - cronjobs
+      - jobs
+      - jobs/status
+  - apiGroups:
+      - image.openshift.io
+    verbs:
+      - create
+      - get
+      - list
+      - update
+      - patch
+      - delete
+    resources:
+      - imagestreams
+  - apiGroups:
       - build.openshift.io
     verbs:
       - get
       - list
       - watch
+      - create
+      - patch
+      - delete
     resources:
       - builds
       - buildconfigs
@@ -48,3 +90,27 @@ rules:
     resources:
       - deploymentconfigs
       - deploymentconfigs/instantiate
+  - apiGroups:
+      - opendatahub.io
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+    resources:
+      - odhdashboardconfigs
+  - apiGroups:
+      - kubeflow.org
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+    resources:
+      - notebooks
