@@ -47,7 +47,7 @@ spec:
             - http://0.0.0.0:2379
             - --advertise-client-urls
             - http://0.0.0.0:2379
-          image: quay.io/modh/etcd-container:3.2.32-rhel7.9-20221017084818
+          image: registry.redhat.io/rhel7/etcd@sha256:d3495b263b103681f1b09a558be43c21989bfc269eb90f84c2609042cebdc626
           name: etcd
           ports:
             - containerPort: 2379
