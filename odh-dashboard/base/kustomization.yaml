@@ -14,6 +14,8 @@ resources:
 - deployment.yaml
 - routes.yaml
 - service.yaml
+- model-serving-role.yaml
+- model-serving-role-binding.yaml
 images:
 - name: odh-dashboard
   newName: quay.io/opendatahub/odh-dashboard

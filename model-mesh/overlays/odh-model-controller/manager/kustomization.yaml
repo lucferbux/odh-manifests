@@ -8,9 +8,6 @@ configMapGenerator:
 - files:
   - controller_manager_config.yaml
   name: manager-config
-- files:
-  - servingruntimes_config.yaml
-  name: servingruntimes-config
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
