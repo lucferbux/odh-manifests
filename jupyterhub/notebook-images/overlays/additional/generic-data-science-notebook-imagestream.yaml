@@ -24,7 +24,7 @@ spec:
       name: quay.io/modh/odh-generic-data-science-notebook@sha256:46dbee9764ae96d95fb5719446226bf0b86ec1e8cc695ac12df575a352d79f8f
     name: "py3.9-v2"
     referencePolicy:
-      type: Source
+      type: Local
   # N-1 Version of the image
   - annotations:
       opendatahub.io/notebook-software: '[{"name":"Python","version":"v3.8"}]'
@@ -35,4 +35,4 @@ spec:
       name: quay.io/modh/odh-generic-data-science-notebook@sha256:ebb5613e6b53dc4e8efcfe3878b4cd10ccb77c67d12c00d2b8c9d41aeffd7df5
     name: "py3.8-v1"
     referencePolicy:
-      type: Source
+      type: Local
