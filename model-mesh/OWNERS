@@ -1,9 +1,10 @@
 approvers:
 - anishasthana
-- rmartine
+- Jooho
 
 reviewers:
-- anishasthana
-- ddalvi
-- gfrasca
-- rmartine
+  - anishasthana
+  - heyselbi
+  - Jooho
+  - Xaenalt
+  - VedantMahabaleshwarkar
