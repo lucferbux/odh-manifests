@@ -122,3 +122,15 @@ rules:
       - list
     resources:
       - odhquickstarts
+  - apiGroups:
+      - template.openshift.io
+    verbs:
+      - '*'
+    resources:
+      - templates
+  - apiGroups:
+      - serving.kserve.io
+    verbs:
+      - '*'
+    resources:
+      - servingruntimes
