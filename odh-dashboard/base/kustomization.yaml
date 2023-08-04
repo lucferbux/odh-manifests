@@ -24,7 +24,7 @@ resources:
 images:
 - name: odh-dashboard
   newName: quay.io/opendatahub/odh-dashboard
-  newTag: //TODO: Replace with nightly tag
+  digest: sha256:08e85d8b4b4ef255ace46c6587e528a533da723e56c5faa63170dcbc2c2bf71c
 - name: oauth-proxy
   newName: registry.redhat.io/openshift4/ose-oauth-proxy
   digest: sha256:ab112105ac37352a2a4916a39d6736f5db6ab4c29bad4467de8d613e80e9bb33
