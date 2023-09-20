@@ -1,0 +1,10 @@
+- op: add
+  path: /rules
+  value:
+    - verbs:
+        - get
+        - list
+      apiGroups:
+        - ''
+      resources:
+        - nodes
