@@ -170,7 +170,7 @@ spec:
   kfdefApplications:
     - odh-notebook-controller
     - notebook-images
-  support: redhat
+  support: red hat
   provider: Jupyter
   docsLink: 'https://jupyter.org'
   quickStart: create-jupyter-notebook
