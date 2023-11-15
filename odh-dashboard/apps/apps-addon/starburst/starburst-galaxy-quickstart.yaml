@@ -12,7 +12,7 @@ spec:
   description: This quickstart will walk you through using a Jupyter notebook to query data through Starburst Galaxy.
   introduction: |-
     ### This quickstart shows you how to query data through Starburst Galaxy using a Jupyter notebook.
-    Red Hat® OpenShift® Data Science lets you connect to your Starburst Galaxy instance(s) to provide you with lightning fast query federation capabilities.
+    Red Hat® OpenShift® AI lets you connect to your Starburst Galaxy instance(s) to provide you with lightning fast query federation capabilities.
 
     In a matter of minutes, you will be able to access data from multiple sources with a single query using a Jupyter notebook.
 
@@ -57,9 +57,9 @@ spec:
         success: You have all of the connection details you need to connect to your Starburst Galaxy cluster.  Proceed to the next step.
         failed: Try the steps again.
 
-    - title: Launch JupyterHub from RHODS
+    - title: Launch JupyterHub from Red Hat OpenShift AI
       description: |-
-        ### To launch a JupyterHub notebook server from within the RHODS console:
+        ### To launch a JupyterHub notebook server from within the Red Hat OpenShift AI console:
         1. Click **Applications** &#x2192; **Enabled**.
         2. Find the **JupyterHub** card.
         3. Click **Launch** on the JupyterHub card to access the JupyterHub **Start a notebook server** page.  A new browser tab will open displaying the **Start a notebook server** page.
