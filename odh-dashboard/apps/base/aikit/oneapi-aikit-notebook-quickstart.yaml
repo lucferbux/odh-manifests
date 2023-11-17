@@ -74,7 +74,7 @@ spec:
     - title: Load a Intel® oneAPI AI Analytics Toolkit sample notebook
       description: |-
         ### Loading a Intel® oneAPI AI Analytics Toolkit sample notebook
-        1. Click on the `oneAPI-samples.git` directory. As part of the Intel® oneAPI AI Analytics Toolkit on Red Hat OpenShift Data Science, we have provided you three examples to help you get started with different AI Kit optimizations.
+        1. Click on the `oneAPI-samples.git` directory. As part of the Intel® oneAPI AI Analytics Toolkit on Red Hat OpenShift AI, we have provided you three examples to help you get started with different AI Kit optimizations.
         2. Click on the `E2E_use_case_with_Intel_optimized_XGBoost_daal4py` directory, then click on the `IntelPython_XGBoost_daal4pyPrediction.ipynb` notebook.
         3. Choose the `Intel SKLearn, XGBoost, & Modin`  JupyterHub Kernel Environment to launch the notebook in.
       review:

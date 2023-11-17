@@ -36,4 +36,4 @@ spec:
     The NVIDIA GPU Operator uses the operator framework within Kubernetes to automate the management of all NVIDIA software components needed to provision GPU. These components include the NVIDIA drivers (to enable CUDA), Kubernetes device plugin for GPUs, the NVIDIA Container Toolkit, automatic node labelling using GFD, DCGM based monitoring and others.
 
     Documentation :
-    [Enabling GPU Support in Openshift Data Science](https://access.redhat.com/documentation/en-us/red_hat_openshift_data_science/1/html/managing_users_and_user_resources/enabling-gpu-support-in-openshift-data-science_user-mgmt)
+    [Enabling GPU Support in OpenShift AI](https://access.redhat.com/documentation/en-us/red_hat_openshift_data_science/1/html/managing_users_and_user_resources/enabling-gpu-support-in-openshift-data-science_user-mgmt)
