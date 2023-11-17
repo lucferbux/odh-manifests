@@ -35,13 +35,13 @@ spec:
       summary:
         success: You have installed the NVIDIA GPU Add-on.
         failed: Ensure you have met the prerequisites for the add-on and try the steps again.
-    - title: Verify that Red Hat OpenShift Data Science sees the available GPUs
+    - title: Verify that Red Hat OpenShift AI sees the available GPUs
       description: |-
         Prerequisites:
 
-        - You have no notebook servers running in Red Hat OpenShift Data Science.
+        - You have no notebook servers running in Red Hat OpenShift AI.
         
-        1. Navigate to the Red Hat OpenShift Data Science dashboard.
+        1. Navigate to the Red Hat OpenShift AI dashboard.
         2. Click **Launch** on the Jupyter card to open the **Start a notebook server** page.
         2. Under **Deployment size**, set the **Number of GPUs** dropdown menu to the number of GPUs you want to use.
         3. Launch a notebook server using the PyTorch notebook image.

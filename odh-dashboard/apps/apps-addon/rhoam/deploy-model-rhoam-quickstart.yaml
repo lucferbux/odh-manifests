@@ -59,7 +59,7 @@ spec:
 
         ## Accessing the API Management Dashboard
 
-        1. From the OpenShift Data Science Dashboard, under **Enabled** applications, locate the tile for "**OpenShift API Management**.
+        1. From the OpenShift AI Dashboard, under **Enabled** applications, locate the tile for "**OpenShift API Management**.
 
         1. Click **Launch**.
 
