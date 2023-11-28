@@ -18,6 +18,8 @@ spec:
     disableModelServing: false
     disableProjectSharing: false
     disableCustomServingRuntimes: false
+    disableKServe: false
+    disableModelMesh: false
     modelMetricsNamespace: ''
   groupsConfig:
     adminGroups: "<admin_groups>"
