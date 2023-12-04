@@ -10,7 +10,7 @@ spec:
   type: how-to
   description: |-
     Install additional python packages into your notebook server.
-  url: https://access.redhat.com/documentation/en-us/red_hat_openshift_data_science/1/html-single/working_on_data_science_projects/index#installing-python-packages-on-your-notebook-server_nb-server
+  url: https://access.redhat.com/documentation/en-us/red_hat_openshift_data_science/1/html-single/working_on_data_science_projects/index#installing-python-packages-on-your-notebook-server_nb-server/index
   durationMinutes: 15
 ---
 apiVersion: dashboard.opendatahub.io/v1
@@ -25,7 +25,7 @@ spec:
   appName: jupyter
   description: |-
     Update the settings or the notebook image on your notebook server.
-  url: https://access.redhat.com/documentation/en-us/red_hat_openshift_data_science/1/html-single/working_on_data_science_projects/index#updating-notebook-server-settings-by-restarting-your-server_nb-server
+  url: https://access.redhat.com/documentation/en-us/red_hat_openshift_data_science/1/html-single/working_on_data_science_projects/index#updating-notebook-server-settings-by-restarting-your-server_nb-server/index
   durationMinutes: 15
 ---
 apiVersion: dashboard.opendatahub.io/v1
@@ -55,5 +55,5 @@ spec:
   type: how-to
   description: |-
     See which packages are installed into your running notebook server.
-  url: https://access.redhat.com/documentation/en-us/red_hat_openshift_data_science/1/html-single/working_on_data_science_projects/index#viewing-python-packages-installed-on-your-notebook-server_nb-server
+  url: https://access.redhat.com/documentation/en-us/red_hat_openshift_data_science/1/html-single/working_on_data_science_projects/index#viewing-python-packages-installed-on-your-notebook-server_nb-server/index
   durationMinutes: 15
