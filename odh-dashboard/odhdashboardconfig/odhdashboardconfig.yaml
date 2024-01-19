@@ -18,9 +18,11 @@ spec:
     disableModelServing: false
     disableProjectSharing: false
     disableCustomServingRuntimes: false
+    disableBiasMetrics: false
+    disablePerformanceMetrics: false
+    disableAcceleratorProfiles: false
     disableKServe: false
     disableModelMesh: false
-    modelMetricsNamespace: ''
   groupsConfig:
     adminGroups: "<admin_groups>"
     allowedGroups: "system:authenticated"
@@ -87,3 +89,4 @@ spec:
         cpu: "6"
         memory: 16Gi
   templateOrder: []
+  templateDisablement: []
